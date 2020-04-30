@@ -1,0 +1,22 @@
+{
+  "name": "bookswebproj",
+  "version": "1.0.0",
+  "description": "Books web API and Web App with authentication and other features.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amritpal7/booksWebProj-extended-version-"
+  },
+  "keywords": [
+    "hello"
+  ],
+  "author": "amritpal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
+}

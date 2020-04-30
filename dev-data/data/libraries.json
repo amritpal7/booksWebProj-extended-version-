@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Martin Luther King Library",
+        "type": "Regional",
+        "building":"",
+        "zipcode": "70118",
+        "opening-hours": "10 am - 8 pm, Mon. - Thurs.; 10 am - 5 pm, Fri. & Sat.; Closed Sundays",
+        "phone": "(504) 596-2630",
+        "address": "1401 South Carrollton Avenue"
+    },
+    {
+        "name": "East New Orleans Regional Library",
+        "type": "Branch",
+        "building": "",
+        "zipcode": "70113",
+        "opening-hours": "10 am - 7 pm, Mon. - Thurs.; 11 am - 4 pm, Fri.; Closed Sundays and Saturdays",
+        "phone": "(504) 596-3110",
+        "address": "2405 Jackson Avenue (Bldg C, Room 235)"
+    },
+    {
+        "name": "Cita Dennis Hubbell Library",
+        "type": "Branch",
+        "building": "Community Center",
+        "zipcode": "70112",
+        "opening-hours": "10 am - 8 pm, Mon. - Thurs.; 10 am - 5 pm, Fri. & Sat.; 1 pm - 5 pm, Sun.",
+        "phone": "(504) 596-2560",
+        "address": "219 Loyola Avenue"
+    },
+    {
+        "name": "Nora Navra Library",
+        "type": "Regional",
+        "building": "Mahalia Jackson Center",
+        "zipcode": "70115",
+        "opening-hours": "10 am - 8 pm, Mon. - Thurs.; 10 am - 5 pm, Fri. & Sat.; Closed Sundays",
+        "phone": "(504) 596-2628",
+        "address": "913 Napoleon Avenue"
+    },
+    {
+        "name": "Robert E. Smith Library",
+        "type": "Branch",
+        "building": "The Automotive Life Insurance Company Building",
+        "zipcode": "70116",
+        "opening-hours": "10 am - 8 pm, Mon. - Thurs.; 10 am - 5 pm, Fri. & Sat.; Closed Sundays",
+        "phone": "(504) 596-3118",
+        "address": "1902 Saint Bernard Avenue"
+    },
+    {
+        "name": "Rosa F. Keller Library",
+        "type": "Children",
+        "building": "",
+        "zipcode": "70114",
+        "opening-hours": "10 am - 8 pm, Mon. - Thurs.; 10 am - 5 pm, Fri & Sat.; Closed Sundays",
+        "phone": "(504) 596-3113",
+        "address": "725 Pelican Street"
+    },
+    {
+        "name": "Milton H. Latter Memorial Library",
+        "type": "Regional",
+        "building": "",
+        "zipcode": "70127",
+        "opening-hours": "10 am - 8 pm, Mon. - Thurs.; 10 am - 5 pm, Fri. & Sat.; 1 pm - 5 pm, Sun.",
+        "phone": "(504) 596-0200",
+        "address": "5641 Read Boulevard"
+    }
+]
