@@ -4,18 +4,26 @@ const {
   getBook,
   createBook,
   updateBook,
-  deleteBook
+  deleteBook,
+  aliasPopularBooks,
+  booksStats
 } = require("./../controllers/books");
+
+const { protect, restrictTo } = require("./../controllers/auth");
 
 
 const router = express.Router();
 
-router.route("/").get(getBooks).post(createBook);
+router.route("/alias-popular-books").get(aliasPopularBooks, getBooks);
+
+router.route("/").get(protect, getBooks).post(protect, restrictTo("admin", "users"), createBook);
+
+router.route("/books-stats").get(booksStats);
 
 router
-  .route("/:sellerId")
+  .route("/:bookId")
   .get(getBook)
-  .patch(updateBook)
-  .delete(deleteBook);
+  .patch(protect, restrictTo("admin", "users"), updateBook)
+  .delete(protect, restrictTo("admin"), deleteBook);
 
 module.exports = router;
