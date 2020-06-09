@@ -56,7 +56,12 @@ const UserSchema = new mongoose.Schema({
     },
     passwordChangedAt: Date,
     passwordResetToken: String,
-    passwordResetExpires: Date
+    passwordResetExpires: Date,
+    acitve: {
+        type: Boolean,
+        default: true,
+        select: false
+    }
 });
 
 // Encrypt password using bcrypt
@@ -83,6 +88,11 @@ UserSchema.pre("save", function () {
     next();
 })
 
+UserSchema.pre(/^find/, function(next) {
+    // this points to the current query
+    this.find({ active: { $ne: false } });
+    next();
+  });
 
 // Sign JWT and return
 // UserSchema.methods.getSignedJwtToken = function () {
