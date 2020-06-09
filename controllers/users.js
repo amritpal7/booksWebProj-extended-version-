@@ -28,7 +28,7 @@ exports.updateMe = catchAsync(async (req, res, next) => {
   if (req.body.password || req.body.passwordConfirm) {
     return next(
       new errorResponse(
-        'This route is not for password updates. Please use /updateMyPassword.',
+        'This route is not for password updates. Please use /updateme',
         400
       )
     );
@@ -52,7 +52,7 @@ exports.updateMe = catchAsync(async (req, res, next) => {
 });
 
 exports.deleteMe = catchAsync(async (req, res, next) => {
-  await User.findByIdAndUpdate(req.user.id, { active: false }, { new: true, runValidators: true});
+  await User.findByIdAndUpdate(req.user.id, { active: false });
 
   res.status(204).json({
     success: true,
